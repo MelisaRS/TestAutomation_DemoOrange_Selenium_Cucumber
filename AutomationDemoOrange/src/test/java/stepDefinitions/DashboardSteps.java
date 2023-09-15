@@ -36,6 +36,7 @@ public class DashboardSteps {
         Thread.sleep(5000);
     }
 
+    @Then("I click on the buzz button")
     public void clickOnBuzzButton() throws InterruptedException {
         Thread.sleep(5000);
         dashboardPage.clickOnBuzzButton();
