@@ -17,8 +17,8 @@ public class DashboardPage {
     @FindBy(xpath = "//h6[text()='Dashboard']")
     WebElement dashboardTitle;
 
-    @FindBy(xpath = "//a[@href = '/web/index.php/pim/viewMyDetails']")
-    WebElement myInfoButton;
+    //@FindBy(xpath = "//a[@href = '/web/index.php/pim/viewMyDetails']")
+    //WebElement myInfoButton;
 
     //@FindBy(xpath = "//a[@href = '/web/index.php/admin/viewAdminModule']")
     //WebElement adminButton;
@@ -34,6 +34,10 @@ public class DashboardPage {
     }
 
     public void clickOnMyInfoButton(){
+
+        WebElement myInfoButton = new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href = '/web/index.php/pim/viewMyDetails']")));
+
         myInfoButton.click();
     }
 
@@ -43,6 +47,20 @@ public class DashboardPage {
                 .until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href = '/web/index.php/admin/viewAdminModule']")));
 
         adminButton.click();
+    }
+
+    public void clickOnPIMButton(){
+        WebElement pimButton = new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='/web/index.php/pim/viewPimModule']")));
+
+        pimButton.click();
+    }
+
+    public void clickOnBuzzButton(){
+        WebElement buzzButton = new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='/web/index.php/buzz/viewBuzz']")));
+
+        buzzButton.click();
     }
 
 }

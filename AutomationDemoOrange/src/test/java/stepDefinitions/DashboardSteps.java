@@ -28,4 +28,16 @@ public class DashboardSteps {
         Thread.sleep(5000);
         dashboardPage.clickOnAdminButton();
     }
+
+    @Then("I click on the pim button")
+    public void clickOnPimButton() throws InterruptedException {
+        Thread.sleep(5000);
+        dashboardPage.clickOnPIMButton();
+        Thread.sleep(5000);
+    }
+
+    public void clickOnBuzzButton() throws InterruptedException {
+        Thread.sleep(5000);
+        dashboardPage.clickOnBuzzButton();
+    }
 }
