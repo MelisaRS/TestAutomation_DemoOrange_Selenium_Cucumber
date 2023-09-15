@@ -9,3 +9,5 @@ Feature: Login Demo Orange Web
       And I set the password field with "admin123"
       When I click on the login button
       Then The home page should be displayed
+      And I click on the user drop down
+      And I click on the logout button

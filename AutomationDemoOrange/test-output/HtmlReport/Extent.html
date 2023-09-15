@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>sep. 15, 2023 08:10:39 a. m.</span>
+			<span class='label blue darken-3 suite-start-time'>sep. 15, 2023 02:41:05 p. m.</span>
 			</a>
 		</ul>
 	</div>
@@ -76,6 +76,8 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@loginWithValidCredentials</a></li>
+					<li><a href='#'>@VerifyEmploymentStatus</a></li>
 					<li><a href='#'>@ChangeMyInfoWithCorrectInformation</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
@@ -119,7 +121,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='$100%'>
-                    <span class='strong'>1</span> features passed</span>
+                    <span class='strong'>3</span> features passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -137,7 +139,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>1</span> scenarios passed</span>
+                    <span class='strong'>8</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -157,7 +159,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>9</span> steps passed</span>
+                    <span class='strong'>64</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -186,8 +188,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>My Info Demo Orange Web</span>
-						<span class='test-time'>sep. 15, 2023 08:10:40 a. m.</span>
+						<span class='test-name'>Admin Job - Employment Status Page</span>
+						<span class='test-time'>sep. 15, 2023 02:41:06 p. m.</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -198,9 +200,356 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario node' test-id='2' status='pass'>
+<div class='scenario outline node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 45.805</span>
+	<span class='duration right label'>00 03 35.943</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Verify Employments Status are displayed in the admin job page</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>employmentStatus</td></tr><tr><td>Freelance</td></tr><tr><td>Full-Time Contract</td></tr><tr><td>Full-Time Permanent</td></tr><tr><td>Full-Time Probation</td></tr><tr><td>Part-Time Contract</td></tr><tr><td>Part-Time Internship</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='3' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Verify Employments Status are displayed in the admin job page</div>
+
+				<div class='category-list'>
+						<span class='category label'>@VerifyEmploymentStatus</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='5' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.CommonSteps.goToDemoOrangePage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am in Demo Orange web page</h6>
+
+				</li>
+				<li test-id='6' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.LoginSteps.setUserName(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I set the user name field with "Admin"</h6>
+
+				</li>
+				<li test-id='7' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.LoginSteps.setPassword(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the password field with "admin123"</h6>
+
+				</li>
+				<li test-id='8' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.LoginSteps.clickOnLoginButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on the login button</h6>
+
+				</li>
+				<li test-id='9' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.DashboardSteps.clickOnButtonAdmin()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on the admin button</h6>
+
+				</li>
+				<li test-id='10' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.Admin_UserManagementSteps.clickOnJobComboBoxPage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the job comboBox</h6>
+
+				</li>
+				<li test-id='11' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.Admin_UserManagementSteps.clickOnEmploymentStatusSelect()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the employment status selection</h6>
+
+				</li>
+				<li test-id='12' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.Admin_Job_EmploymentStatusSteps.verifyEmploymentStatusIsDisplayed(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The employment status "Freelance" should be displayed</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='14' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Verify Employments Status are displayed in the admin job page</div>
+
+				<div class='category-list'>
+						<span class='category label'>@VerifyEmploymentStatus</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='16' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.CommonSteps.goToDemoOrangePage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am in Demo Orange web page</h6>
+
+				</li>
+				<li test-id='17' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.LoginSteps.setUserName(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I set the user name field with "Admin"</h6>
+
+				</li>
+				<li test-id='18' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.LoginSteps.setPassword(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the password field with "admin123"</h6>
+
+				</li>
+				<li test-id='19' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.LoginSteps.clickOnLoginButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on the login button</h6>
+
+				</li>
+				<li test-id='20' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.DashboardSteps.clickOnButtonAdmin()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on the admin button</h6>
+
+				</li>
+				<li test-id='21' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.Admin_UserManagementSteps.clickOnJobComboBoxPage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the job comboBox</h6>
+
+				</li>
+				<li test-id='22' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.Admin_UserManagementSteps.clickOnEmploymentStatusSelect()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the employment status selection</h6>
+
+				</li>
+				<li test-id='23' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.Admin_Job_EmploymentStatusSteps.verifyEmploymentStatusIsDisplayed(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The employment status "Full-Time Contract" should be displayed</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='25' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Verify Employments Status are displayed in the admin job page</div>
+
+				<div class='category-list'>
+						<span class='category label'>@VerifyEmploymentStatus</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='27' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.CommonSteps.goToDemoOrangePage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am in Demo Orange web page</h6>
+
+				</li>
+				<li test-id='28' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.LoginSteps.setUserName(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I set the user name field with "Admin"</h6>
+
+				</li>
+				<li test-id='29' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.LoginSteps.setPassword(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the password field with "admin123"</h6>
+
+				</li>
+				<li test-id='30' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.LoginSteps.clickOnLoginButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on the login button</h6>
+
+				</li>
+				<li test-id='31' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.DashboardSteps.clickOnButtonAdmin()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on the admin button</h6>
+
+				</li>
+				<li test-id='32' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.Admin_UserManagementSteps.clickOnJobComboBoxPage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the job comboBox</h6>
+
+				</li>
+				<li test-id='33' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.Admin_UserManagementSteps.clickOnEmploymentStatusSelect()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the employment status selection</h6>
+
+				</li>
+				<li test-id='34' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.Admin_Job_EmploymentStatusSteps.verifyEmploymentStatusIsDisplayed(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The employment status "Full-Time Permanent" should be displayed</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='36' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Verify Employments Status are displayed in the admin job page</div>
+
+				<div class='category-list'>
+						<span class='category label'>@VerifyEmploymentStatus</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='38' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.CommonSteps.goToDemoOrangePage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am in Demo Orange web page</h6>
+
+				</li>
+				<li test-id='39' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.LoginSteps.setUserName(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I set the user name field with "Admin"</h6>
+
+				</li>
+				<li test-id='40' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.LoginSteps.setPassword(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the password field with "admin123"</h6>
+
+				</li>
+				<li test-id='41' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.LoginSteps.clickOnLoginButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on the login button</h6>
+
+				</li>
+				<li test-id='42' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.DashboardSteps.clickOnButtonAdmin()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on the admin button</h6>
+
+				</li>
+				<li test-id='43' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.Admin_UserManagementSteps.clickOnJobComboBoxPage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the job comboBox</h6>
+
+				</li>
+				<li test-id='44' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.Admin_UserManagementSteps.clickOnEmploymentStatusSelect()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the employment status selection</h6>
+
+				</li>
+				<li test-id='45' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.Admin_Job_EmploymentStatusSteps.verifyEmploymentStatusIsDisplayed(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The employment status "Full-Time Probation" should be displayed</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='47' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Verify Employments Status are displayed in the admin job page</div>
+
+				<div class='category-list'>
+						<span class='category label'>@VerifyEmploymentStatus</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='49' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.CommonSteps.goToDemoOrangePage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am in Demo Orange web page</h6>
+
+				</li>
+				<li test-id='50' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.LoginSteps.setUserName(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I set the user name field with "Admin"</h6>
+
+				</li>
+				<li test-id='51' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.LoginSteps.setPassword(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the password field with "admin123"</h6>
+
+				</li>
+				<li test-id='52' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.LoginSteps.clickOnLoginButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on the login button</h6>
+
+				</li>
+				<li test-id='53' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.DashboardSteps.clickOnButtonAdmin()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on the admin button</h6>
+
+				</li>
+				<li test-id='54' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.Admin_UserManagementSteps.clickOnJobComboBoxPage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the job comboBox</h6>
+
+				</li>
+				<li test-id='55' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.Admin_UserManagementSteps.clickOnEmploymentStatusSelect()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the employment status selection</h6>
+
+				</li>
+				<li test-id='56' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.Admin_Job_EmploymentStatusSteps.verifyEmploymentStatusIsDisplayed(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The employment status "Part-Time Contract" should be displayed</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='58' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Verify Employments Status are displayed in the admin job page</div>
+
+				<div class='category-list'>
+						<span class='category label'>@VerifyEmploymentStatus</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='60' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.CommonSteps.goToDemoOrangePage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am in Demo Orange web page</h6>
+
+				</li>
+				<li test-id='61' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.LoginSteps.setUserName(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I set the user name field with "Admin"</h6>
+
+				</li>
+				<li test-id='62' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.LoginSteps.setPassword(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the password field with "admin123"</h6>
+
+				</li>
+				<li test-id='63' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.LoginSteps.clickOnLoginButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on the login button</h6>
+
+				</li>
+				<li test-id='64' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.DashboardSteps.clickOnButtonAdmin()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on the admin button</h6>
+
+				</li>
+				<li test-id='65' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.Admin_UserManagementSteps.clickOnJobComboBoxPage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the job comboBox</h6>
+
+				</li>
+				<li test-id='66' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.Admin_UserManagementSteps.clickOnEmploymentStatusSelect()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the employment status selection</h6>
+
+				</li>
+				<li test-id='67' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.Admin_Job_EmploymentStatusSteps.verifyEmploymentStatusIsDisplayed(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The employment status "Part-Time Internship" should be displayed</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='69'>
+					<div class='test-heading'>
+						<span class='test-name'>Login Demo Orange Web</span>
+						<span class='test-time'>sep. 15, 2023 02:44:42 p. m.</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='70' status='pass'>
+
+	<span class='duration right label'>00 00 17.441</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Login into Demo Orange page with valid credentials</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@loginWithValidCredentials</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='72' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.CommonSteps.goToDemoOrangePage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am in Demo Orange web page</div>
+
+
+		</li>
+		<li test-id='73' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.LoginSteps.setUserName(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I set the user name field with "Admin"</div>
+
+
+		</li>
+		<li test-id='74' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.LoginSteps.setPassword(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the password field with "admin123"</div>
+
+
+		</li>
+		<li test-id='75' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.LoginSteps.clickOnLoginButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on the login button</div>
+
+
+		</li>
+		<li test-id='76' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.DashboardSteps.verifyDashboardPageIsDisplayed())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The home page should be displayed</div>
+
+
+		</li>
+		<li test-id='77' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.Admin_Job_EmploymentStatusSteps.clickOnUserDrop())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the user drop down</div>
+
+
+		</li>
+		<li test-id='78' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.Admin_Job_EmploymentStatusSteps.clickOnLogout())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the logout button</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='80'>
+					<div class='test-heading'>
+						<span class='test-name'>My Info with Personal Details in Demo Orange Web</span>
+						<span class='test-time'>sep. 15, 2023 02:44:59 p. m.</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='81' status='pass'>
+
+	<span class='duration right label'>00 00 23.493</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Update the information in Demo Orange with correct information</div>
 	</div>
@@ -211,48 +560,48 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='4' class='node given Pass' status='Pass'>
+		<li test-id='83' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.CommonSteps.goToDemoOrangePage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am in Demo Orange web page</div>
 
 
 		</li>
-		<li test-id='5' class='node given Pass' status='Pass'>
+		<li test-id='84' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.LoginSteps.setUserName(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I set the user name field with "Admin"</div>
 
 
 		</li>
-		<li test-id='6' class='node and Pass' status='Pass'>
+		<li test-id='85' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.LoginSteps.setPassword(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the password field with "admin123"</div>
 
 
 		</li>
-		<li test-id='7' class='node when Pass' status='Pass'>
+		<li test-id='86' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.LoginSteps.clickOnLoginButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on the login button</div>
 
 
 		</li>
-		<li test-id='8' class='node then Pass' status='Pass'>
+		<li test-id='87' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.DashboardSteps.clickOnButtonMyInfo())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on the my info button</div>
 
 
 		</li>
-		<li test-id='9' class='node and Pass' status='Pass'>
+		<li test-id='88' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.MyInfo_PersonalDetailsSteps.verifyPersonalDetailsIsDisplayed())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The personal details should be displayed</div>
 
 
 		</li>
-		<li test-id='10' class='node and Pass' status='Pass'>
+		<li test-id='89' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.MyInfo_PersonalDetailsSteps.fillPersonalDetails(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I fill the Personal Details with</div>
 
 
 					<div class="node-step"><table class='markup-table table '><tr><td>Dante</td><td>PauDan</td><td>0026</td><td>55444111</td><td>2025-07-12</td><td>123456789</td><td>123123123</td></tr></table></div>
 		</li>
-		<li test-id='11' class='node and Pass' status='Pass'>
+		<li test-id='90' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.MyInfo_PersonalDetailsSteps.clickOnSaveButtonGeneralDetails())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the save button of generals details</div>
 
 
 		</li>
-		<li test-id='12' class='node and Pass' status='Pass'>
+		<li test-id='91' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.MyInfo_PersonalDetailsSteps.verifyInformationPersonalDetails(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I verify the following data in the Personal Details</div>
 
 
@@ -304,6 +653,97 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
+						<span class='category-name'>@loginWithValidCredentials</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>sep. 15, 2023 02:44:42 p. m.</td>
+										<td class='linked' test-id='70'>Login into Demo Orange page with valid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@VerifyEmploymentStatus</span>
+						<span class='category-status right'>
+						<span class='label pass'>6</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 6</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>sep. 15, 2023 02:41:06 p. m.</td>
+										<td class='linked' test-id='3'>Verify Employments Status are displayed in the admin job page</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>sep. 15, 2023 02:41:48 p. m.</td>
+										<td class='linked' test-id='14'>Verify Employments Status are displayed in the admin job page</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>sep. 15, 2023 02:42:22 p. m.</td>
+										<td class='linked' test-id='25'>Verify Employments Status are displayed in the admin job page</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>sep. 15, 2023 02:42:58 p. m.</td>
+										<td class='linked' test-id='36'>Verify Employments Status are displayed in the admin job page</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>sep. 15, 2023 02:43:33 p. m.</td>
+										<td class='linked' test-id='47'>Verify Employments Status are displayed in the admin job page</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>sep. 15, 2023 02:44:07 p. m.</td>
+										<td class='linked' test-id='58'>Verify Employments Status are displayed in the admin job page</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
 						<span class='category-name'>@ChangeMyInfoWithCorrectInformation</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
@@ -326,8 +766,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>sep. 15, 2023 08:10:40 a. m.</td>
-										<td class='linked' test-id='2'>Update the information in Demo Orange with correct information</td>
+										<td>sep. 15, 2023 02:44:59 p. m.</td>
+										<td class='linked' test-id='81'>Update the information in Demo Orange with correct information</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -352,37 +792,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>9</div>
+					<div class='panel-lead'>64</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>sep. 15, 2023 08:10:39 a. m.</div>
+					<div class='panel-lead'>sep. 15, 2023 02:41:05 p. m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>sep. 15, 2023 08:11:26 a. m.</div>
+			 		<div class='panel-lead'>sep. 15, 2023 02:45:23 p. m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 46.795</div>
+					<div class='panel-lead'>00 04 17.593</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -396,6 +836,24 @@
 							<th>Failed</th>
 							<th>Skipped</th>
 							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>@loginWithValidCredentials</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@VerifyEmploymentStatus</td>
+							<td>6</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
 						</tr>
 						<tr>
 							<td>@ChangeMyInfoWithCorrectInformation</td>
@@ -417,23 +875,23 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 1,
-				passParent: 1,
+                parentCount: 3,
+				passParent: 3,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 1,
-				passChild: 1,
+				childCount: 8,
+				passChild: 8,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 9,
-				passGrandChild: 9,
+				grandChildCount: 64,
+				passGrandChild: 64,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -445,7 +903,7 @@
 		
 		<script>
 			var timeline = {
-			        "My Info Demo Orange Web":45.81
+			        "Admin Job - Employment Status Page":215.947,"Login Demo Orange Web":17.441,"My Info with Personal Details in Demo Orange Web":23.493
 			};
 		</script>
 		

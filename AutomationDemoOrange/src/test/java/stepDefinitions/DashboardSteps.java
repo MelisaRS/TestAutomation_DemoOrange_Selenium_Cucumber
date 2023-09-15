@@ -16,8 +16,16 @@ public class DashboardSteps {
 
     @Then("I click on the my info button")
     public void clickOnButtonMyInfo() throws InterruptedException {
+        //necesita un waiters
         Thread.sleep(5000);
         dashboardPage.clickOnMyInfoButton();
         //Thread.sleep(5000);
+    }
+
+    @Then("I click on the admin button")
+    public void clickOnButtonAdmin() throws InterruptedException {
+        //necesita un waiters
+        Thread.sleep(5000);
+        dashboardPage.clickOnAdminButton();
     }
 }

@@ -1,9 +1,14 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class DashboardPage {
 
@@ -14,6 +19,9 @@ public class DashboardPage {
 
     @FindBy(xpath = "//a[@href = '/web/index.php/pim/viewMyDetails']")
     WebElement myInfoButton;
+
+    //@FindBy(xpath = "//a[@href = '/web/index.php/admin/viewAdminModule']")
+    //WebElement adminButton;
 
     public DashboardPage(WebDriver driver){
         this.driver = driver;
@@ -27,6 +35,14 @@ public class DashboardPage {
 
     public void clickOnMyInfoButton(){
         myInfoButton.click();
+    }
+
+    public void clickOnAdminButton(){
+        //waiter
+        WebElement adminButton = new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href = '/web/index.php/admin/viewAdminModule']")));
+
+        adminButton.click();
     }
 
 }
