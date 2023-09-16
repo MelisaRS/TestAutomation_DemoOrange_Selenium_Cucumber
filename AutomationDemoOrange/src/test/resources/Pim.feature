@@ -16,3 +16,5 @@ Feature: PIM Page
       And I set the employee name field with "Hugo Luis"
       And I click on the search button
       And I verify employee name "Hugo Luis"
+      And I click on the user drop down
+      And I click on the logout button

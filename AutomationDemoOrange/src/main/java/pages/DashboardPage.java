@@ -58,7 +58,7 @@ public class DashboardPage {
 
     public void clickOnBuzzButton(){
         WebElement buzzButton = new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='/web/index.php/buzz/viewBuzz']")));
+                .until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@href, 'uzz')]")));
 
         buzzButton.click();
     }

@@ -18,3 +18,5 @@ Feature: My Info with Personal Details in Demo Orange Web
       And I click on the save button of generals details
       And I verify the following data in the Personal Details
         | Dante | PauDan | 0026 | 55444111 | 2025-07-12 | 123456789 | 123123123 |
+      And I click on the user drop down
+      And I click on the logout button

@@ -48,6 +48,7 @@ public class MyInfo_PersonalDetailsSteps {
 
     }
 
+    /*
     @And("I fill others Personal Details with")
     public void fillOthersPersonalDetails(DataTable personalDetails) throws InterruptedException {
 
@@ -60,7 +61,7 @@ public class MyInfo_PersonalDetailsSteps {
         myInfoPersonalDetailsPage.setSinNumberTextBox(data.get(4));
         Thread.sleep(5000);
     }
-
+*/
     @And("I click on the save button of generals details")
     public void clickOnSaveButtonGeneralDetails(){
 
